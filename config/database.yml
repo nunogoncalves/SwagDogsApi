@@ -1,0 +1,8 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: swagger_dogs_development
+  host: localhost
+  pool: 25
+  username: postgres
+  password: postgres
