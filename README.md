@@ -6,7 +6,7 @@ Swagger branch contains Swagger integration
 
 ---
 
-<h3>How to view the api documentation</h3>
+<h3>How to view the this sample API documentation</h3>
 - rake db:create
 - rake db:migrate
 - rails s -p 2012 -> hard coded inside the app set to this port.
