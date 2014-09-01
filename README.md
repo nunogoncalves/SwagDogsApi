@@ -73,6 +73,6 @@ rake swagger:docs
 
   - Make sure you update references for resources in the swagger index.html file
     - In this case:
-      <script src='lib/jquery-1.8.0.min.js' type='text/javascript'></script>
+      "<script src='lib/jquery-1.8.0.min.js' type='text/javascript'></script>"
       to
-      <script src='docs/swagger-ui/lib/jquery-1.8.0.min.js' type='text/javascript'></script>
+      "<script src='docs/swagger-ui/lib/jquery-1.8.0.min.js' type='text/javascript'></script>"
