@@ -7,8 +7,8 @@ Swagger branch contains Swagger integration</br>
 <h3>How to view the api documentation</h3>
 - rake db:create
 - rake db:migrate
-- rails s -p 2012 -> hard coded inside the app set to this port.
-- http://localhost:2012/docs
+- rails s -p 3000 -> hard coded inside the app set to this port.
+- http://localhost:3000/docs
 
 You can interact with the api (CRUD methods) through the swagger interface.
 

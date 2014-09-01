@@ -6,10 +6,11 @@
 ---
 
 <h3>How to view the this sample API documentation</h3>
+- change to swagger branch
 - rake db:create
 - rake db:migrate
-- rails s -p 2012 -> hard coded inside the app set to this port.
-- http://localhost:2012/docs
+- rails s
+- http://localhost:3000/docs
 
 You can interact with the api (CRUD methods) through the swagger interface.
 
@@ -35,7 +36,7 @@ Swagger::Docs::Config.register_apis({
     # the output location where your .json files are written to
     :api_file_path => "public/#{API}",
     # the URL base path to your API
-    :base_path => "http://localhost:2012",
+    :base_path => "http://localhost:3000",
     # if you want to delete all .json files at each generation
     :clean_directory => false,
     # add custom attributes to api-docs
@@ -112,6 +113,6 @@ rake swagger:docs
 ```
 
 - now visit the swagger index.html file page (in this case, /docs/index.html)
-http://localhost:2012/docs
+http://localhost:3000/docs
 
 You should be able to see a swagger page with the index action documented.
