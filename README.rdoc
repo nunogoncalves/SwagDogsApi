@@ -1,8 +1,10 @@
 Sample application with swagger integration.
 
-Master is a simple API without swagger.</br>
-Swagger branch contains Swagger integration</br>
+Master is a simple API without swagger.
 
-rake db:create</br>
-rake db:migrate</br>
+Swagger branch contains Swagger integration
 
+
+rake db:create
+
+rake db:migrate
