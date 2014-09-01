@@ -77,6 +77,7 @@ rake swagger:docs
       to
       &lt;script src='docs/swagger-ui/lib/jquery-1.8.0.min.js' type='text/javascript'&gt;&lt;/script&gt;
   - Also in the index file locate the line
+
     ```javascript
     window.swaggerUi = new SwaggerUi({
           url: "http://petstore.swagger.wordnik.com/api/api-docs",
@@ -84,4 +85,5 @@ rake swagger:docs
           ...
     })
     ```
-    and replace the url for api-docs
+
+    and replace the url with "api-docs" only.
