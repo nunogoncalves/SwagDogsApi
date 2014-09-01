@@ -1,10 +1,10 @@
-API = "docs"
+DOCS_PATH = 'docs'
 Swagger::Docs::Config.register_apis({
   "0.0" => {
     # the extension used for the API
     :api_extension_type => :json,
     # the output location where your .json files are written to
-    :api_file_path => "public/#{API}",
+    :api_file_path => "public/#{DOCS_PATH}",
     # the URL base path to your API
     :base_path => "http://localhost:3000",
     # if you want to delete all .json files at each generation
@@ -25,9 +25,6 @@ Swagger::Docs::Config.register_apis({
 
 class Swagger::Docs::Config
   def self.transform_path(path)
-    # "http://localhost:2011/api/v0/api-docs/#{path}"
-    # "http://localhost:2011/api/v0/api-docs/cats.{format}"
-    # "api/v0/#{path}"
-    "#{API}/#{path}"
+    "#{DOCS_PATH}/#{path}"
   end
 end
