@@ -67,5 +67,12 @@ rake swagger:docs
 - Download swagger-ui from https://github.com/wordnik/swagger-ui
   - Clone to your compute and copy the contents of dist folder to your a application public folder.
   - You probably need to check the index.html path to load it in your broswer afterwards.
+    - To follow this app's example here's a snapshot of the structure (swagger branch only)
 
+<img src="https://dl.dropboxusercontent.com/u/2001692/imagesshelf/SwaggerSample/swagger_docs_structure.png" alt="">
 
+  - Make sure you update references for resources in the swagger index.html file
+    - In this case:
+      <script src='lib/jquery-1.8.0.min.js' type='text/javascript'></script>
+      to
+      <script src='docs/swagger-ui/lib/jquery-1.8.0.min.js' type='text/javascript'></script>
