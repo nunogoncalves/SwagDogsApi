@@ -1,0 +1,187 @@
+{
+  "apiVersion": "0.0",
+  "swaggerVersion": "1.2",
+  "basePath": "http://localhost:2012/",
+  "resourcePath": "dogs",
+  "apis": [
+    {
+      "path": "api/v0/dogs.json",
+      "operations": [
+        {
+          "summary": "Get the list of all dogs",
+          "notes": "It's possible to filter dogs",
+          "parameters": [
+            {
+              "paramType": "query",
+              "name": "name",
+              "type": "string",
+              "description": "Filter by dog name",
+              "required": false
+            }
+          ],
+          "responseMessages": [
+            {
+              "code": 200,
+              "message": "Ok"
+            }
+          ],
+          "method": "get",
+          "nickname": "Api::V0::Dogs#index"
+        }
+      ]
+    },
+    {
+      "path": "api/v0/dogs.json",
+      "operations": [
+        {
+          "summary": "Create a dog",
+          "notes": "Create a dog.",
+          "parameters": [
+            {
+              "paramType": "body",
+              "name": "dog",
+              "type": "Dog",
+              "description": "a dog object to create",
+              "required": true
+            }
+          ],
+          "responseMessages": [
+            {
+              "code": 201,
+              "message": "Created"
+            },
+            {
+              "code": 406,
+              "message": "Not Acceptable"
+            },
+            {
+              "code": 422,
+              "message": "Unprocessable Entity"
+            }
+          ],
+          "method": "post",
+          "nickname": "Api::V0::Dogs#create"
+        }
+      ]
+    },
+    {
+      "path": "api/v0/dogs/{id}.json",
+      "operations": [
+        {
+          "summary": "Display the dog object",
+          "notes": "Get and display a dog",
+          "parameters": [
+            {
+              "paramType": "path",
+              "name": "id",
+              "type": "string",
+              "description": "Dog id",
+              "required": true
+            }
+          ],
+          "responseMessages": [
+            {
+              "code": 200,
+              "message": "Ok"
+            }
+          ],
+          "method": "get",
+          "nickname": "Api::V0::Dogs#show"
+        }
+      ]
+    },
+    {
+      "path": "api/v0/dogs/{id}.json",
+      "operations": [
+        {
+          "summary": "Update a dog",
+          "notes": "Update a dog.",
+          "parameters": [
+            {
+              "paramType": "path",
+              "name": "id",
+              "type": "integer",
+              "description": "id of dog to update",
+              "required": true
+            }
+          ],
+          "responseMessages": [
+            {
+              "code": 201,
+              "message": "Created"
+            },
+            {
+              "code": 406,
+              "message": "Not Acceptable"
+            },
+            {
+              "code": 422,
+              "message": "Unprocessable Entity"
+            }
+          ],
+          "method": "put",
+          "nickname": "Api::V0::Dogs#update"
+        }
+      ]
+    },
+    {
+      "path": "api/v0/dogs/{id}.json",
+      "operations": [
+        {
+          "summary": "Delete a dog",
+          "notes": "Delete a dog.",
+          "parameters": [
+            {
+              "paramType": "path",
+              "name": "id",
+              "type": "integer",
+              "description": "id of dog to delete",
+              "required": true
+            }
+          ],
+          "responseMessages": [
+            {
+              "code": 201,
+              "message": "Created"
+            },
+            {
+              "code": 406,
+              "message": "Not Acceptable"
+            },
+            {
+              "code": 422,
+              "message": "Unprocessable Entity"
+            }
+          ],
+          "method": "delete",
+          "nickname": "Api::V0::Dogs#destroy"
+        }
+      ]
+    }
+  ],
+  "models": {
+    "Dog": {
+      "id": "Dog",
+      "required": [
+        "name",
+        "breed",
+        "color"
+      ],
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Dog Name"
+        },
+        "breed": {
+          "type": "string",
+          "description": "Dog breed"
+        },
+        "color": {
+          "type": "string",
+          "description": "Dog color"
+        }
+      },
+      "description": "Dog Object"
+    }
+  }
+}

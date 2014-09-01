@@ -6,3 +6,8 @@ Swagger branch contains Swagger integration</br>
 rake db:create</br>
 rake db:migrate</br>
 
+rails s -p 2012 -> hard coded inside the app set to this port.
+
+rake swagger:docs
+
+http://localhost:2012/docs
