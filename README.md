@@ -85,5 +85,9 @@ rake swagger:docs
           ...
     })
     ```
-
     and replace the url with "api-docs" only.
+
+- Add
+  ```ruby
+  swagger_controller :your_controller, 'Your Controller'
+  ```
