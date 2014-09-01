@@ -23,6 +23,9 @@ Swagger::Docs::Config.register_apis({
   }
 })
 
+# Without this transform path, we would have api and documentation endpoint
+# conflicts. Both of them pointing to api/v0/dogs.json. Swagger ui instead of
+# loading dogs.json would actually try to call API /dogs.json endpoint.
 class Swagger::Docs::Config
   def self.transform_path(path)
     "#{DOCS_PATH}/#{path}"
