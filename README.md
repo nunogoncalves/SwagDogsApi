@@ -112,5 +112,7 @@ rake swagger:docs
   rake swagger:docs
 ```
 
-now visit the swagger index.html file page (in this case, /docs/index.html)
+- now visit the swagger index.html file page (in this case, /docs/index.html)
 http://localhost:2012/docs
+
+You should be able to see a swagger page with the index action documented.
