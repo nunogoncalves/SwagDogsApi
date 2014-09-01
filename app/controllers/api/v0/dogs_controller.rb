@@ -73,6 +73,8 @@ module Api
 
         param :path, :id, :integer, :required, "id of dog to update"
 
+        param :body, :dog, :Dog, :required, "a dog object to create"
+
         response :created
         response :not_acceptable
         response :unprocessable_entity

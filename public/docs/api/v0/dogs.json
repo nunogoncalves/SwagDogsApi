@@ -103,6 +103,13 @@
               "type": "integer",
               "description": "id of dog to update",
               "required": true
+            },
+            {
+              "paramType": "body",
+              "name": "dog",
+              "type": "Dog",
+              "description": "a dog object to create",
+              "required": true
             }
           ],
           "responseMessages": [
