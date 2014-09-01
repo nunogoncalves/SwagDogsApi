@@ -1,7 +1,7 @@
 <h1>Sample application with swagger integration.</h1>
 
--Master is a simple API without swagger
--Swagger branch contains Swagger integration
+- Master is a simple API without swagger
+- Swagger branch contains Swagger integration
 
 ---
 
