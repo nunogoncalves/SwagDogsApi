@@ -66,7 +66,7 @@ rake swagger:docs
 
 - Download swagger-ui from https://github.com/wordnik/swagger-ui
   - Clone to your compute and copy the contents of dist folder to your a application public folder.
-  - You probably need to check the index.html path to load it in your broswer afterwards.
+  - You probably need to check the index.html path to load it in your broswer afterwards. (in this case we have moved the index.html from swagger-ui folder to docs folder)
     - To follow this app's example here's a snapshot of the structure (swagger branch only)
 
 <img src="https://dl.dropboxusercontent.com/u/2001692/imagesshelf/SwaggerSample/swagger_docs_structure.png" alt="">
@@ -88,6 +88,29 @@ rake swagger:docs
     and replace the url with "api-docs" only.
 
 - Add
+
   ```ruby
   swagger_controller :your_controller, 'Your Controller'
   ```
+
+- Now you are ready to start building documentation.
+  - To document the index action, add the following snippet to your controller
+
+  ```ruby
+    swagger_api :index do
+      summary "Get the list of all dogs"
+      notes "It's possible to filter dogs"
+
+      param :query, :name, :string, :optional, "Filter by dog name"
+
+      response :ok
+    end
+  ```
+- run the rake task
+
+```ruby
+  rake swagger:docs
+```
+
+now visit the swagger index.html file page (in this case, /docs/index.html)
+http://localhost:2012/docs
