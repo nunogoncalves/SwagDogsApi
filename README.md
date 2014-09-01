@@ -21,8 +21,12 @@ You can interact with the api (CRUD methods) through the swagger interface.
 
 <img src="https://dl.dropboxusercontent.com/u/2001692/imagesshelf/SwaggerSample/swagger_post.png" alt="">
 
+- Add the swagger-docs to your gemfile
+```ruby
+gem 'swagger-docs', '0.1.8'
+```
 
-Create an initializer in your application, for example, swagger_docs.rb
+- Create an initializer in your application, for example, swagger_docs.rb
 ```ruby
 API = "docs"
 Swagger::Docs::Config.register_apis({
@@ -55,4 +59,13 @@ class Swagger::Docs::Config
   end
 end
 ```
+- Try to document your first action
+```ruby
+rake swagger:docs
+```
+
+- Download swagger-ui from https://github.com/wordnik/swagger-ui
+  - Clone to your compute and copy the contents of dist folder to your a application public folder.
+  - You probably need to check the index.html path to load it in your broswer afterwards.
+
 
