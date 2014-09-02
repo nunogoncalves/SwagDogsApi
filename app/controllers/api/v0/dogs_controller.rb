@@ -19,7 +19,7 @@ module Api
         return render json: {}, status: :not_acceptable unless params.has_key? 'dog'
 
         dog = Dog.new(params[:dog])
-        render json: dog, status: dog.save? ? :created : :unprocessable_entity
+        render json: dog, status: dog.save ? :created : :unprocessable_entity
       end
 
     end
