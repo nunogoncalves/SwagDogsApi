@@ -24,6 +24,7 @@ module Api
         param :path, :id, :string, :required, "Dog id"
 
         response :ok
+        response :not_found
       end
 
       def show

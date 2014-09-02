@@ -83,6 +83,10 @@
             {
               "code": 200,
               "message": "Ok"
+            },
+            {
+              "code": 404,
+              "message": "Not Found"
             }
           ],
           "method": "get",
