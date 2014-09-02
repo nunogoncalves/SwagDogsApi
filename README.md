@@ -5,8 +5,8 @@
 
 ---
 
-<h3>How to view the this sample API documentation</h3>
-- change to swagger branch
+<h3>How to view this sample API documentation</h3>
+- git checkout swagger
 - rake db:create
 - rake db:migrate
 - rails s
