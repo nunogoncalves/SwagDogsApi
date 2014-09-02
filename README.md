@@ -59,10 +59,6 @@ class Swagger::Docs::Config
   end
 end
 ```
-- Try to document your first action
-```ruby
-rake swagger:docs
-```
 
 - Download swagger-ui from https://github.com/wordnik/swagger-ui
   - Clone to your compute and copy the contents of dist folder to your a application public folder.
