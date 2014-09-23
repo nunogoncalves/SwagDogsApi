@@ -27,7 +27,7 @@ Swagger::Docs::Config.register_apis({
 # conflicts. Both of them pointing to api/v0/dogs.json. Swagger ui instead of
 # loading dogs.json would actually try to call API /dogs.json endpoint.
 class Swagger::Docs::Config
-  def self.transform_path(path)
+  def self.transform_path(path, api_version)
     "#{DOCS_PATH}/#{path}"
   end
 end

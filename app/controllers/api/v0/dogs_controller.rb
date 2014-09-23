@@ -42,7 +42,7 @@ module Api
 
         param :body, :dog, :Dog, :required, "a dog object to create"
 
-        response :created
+        response :created, "Created", :Dog
         response :not_acceptable
         response :unprocessable_entity
       end

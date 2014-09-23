@@ -22,6 +22,7 @@
           "responseMessages": [
             {
               "code": 200,
+              "responseModel": null,
               "message": "Ok"
             }
           ],
@@ -48,14 +49,17 @@
           "responseMessages": [
             {
               "code": 201,
+              "responseModel": "Dog",
               "message": "Created"
             },
             {
               "code": 406,
+              "responseModel": null,
               "message": "Not Acceptable"
             },
             {
               "code": 422,
+              "responseModel": null,
               "message": "Unprocessable Entity"
             }
           ],
@@ -82,10 +86,12 @@
           "responseMessages": [
             {
               "code": 200,
+              "responseModel": null,
               "message": "Ok"
             },
             {
               "code": 404,
+              "responseModel": null,
               "message": "Not Found"
             }
           ],
@@ -119,14 +125,17 @@
           "responseMessages": [
             {
               "code": 201,
+              "responseModel": null,
               "message": "Created"
             },
             {
               "code": 406,
+              "responseModel": null,
               "message": "Not Acceptable"
             },
             {
               "code": 422,
+              "responseModel": null,
               "message": "Unprocessable Entity"
             }
           ],
@@ -153,14 +162,17 @@
           "responseMessages": [
             {
               "code": 201,
+              "responseModel": null,
               "message": "Created"
             },
             {
               "code": 406,
+              "responseModel": null,
               "message": "Not Acceptable"
             },
             {
               "code": 422,
+              "responseModel": null,
               "message": "Unprocessable Entity"
             }
           ],
