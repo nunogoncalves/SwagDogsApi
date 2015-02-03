@@ -112,3 +112,6 @@ end
 http://localhost:3000/docs
 
 You should be able to see a swagger page with the index action documented.
+
+### TODO
+  Use scribe gem (https://github.com/nunogoncalves/Scribe) which cleans up the place.
